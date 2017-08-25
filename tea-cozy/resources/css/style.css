@@ -1,0 +1,163 @@
+/*******************************************
+DOCUMENT LEVEL STYLES
+*******************************************/
+html, body {
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+}
+
+a, a:visited {
+  color: inherit;
+}
+
+/*******************************************
+HEADER
+*******************************************/
+/* Header is fixed to the top */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 10;
+  background-color: inherit;
+}
+
+/* logo image */
+div.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px; /* per spec */
+}
+
+/* Navigation links */
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+/*******************************************
+PAGE CONTENT
+*******************************************/
+main {
+  max-width: 1200px;
+  margin: auto; /* centers in page */
+  padding-top: 70px; /* height of header plus its border */
+}
+
+h2, h3, h4{
+  margin: 0;
+  padding: 10px;
+  display: block;
+}
+
+h5 {
+  padding: 0;
+  margin: 30px auto;
+}
+
+/*******************************************
+MISSION SECTION
+*******************************************/
+div#mission {
+  display: flex;
+  width: 1200px;
+  height: 700px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/img-mission-background.jpg");
+}
+
+div#mission-text {
+  background-color: black;
+  width: 100%;
+  margin: auto;
+}
+
+/*******************************************
+FEATURED TEA SECTION
+*******************************************/
+div#featured-tea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1000px; /* per spec */
+  margin: auto;
+  padding: 70px 0;
+}
+
+/* Contains the 5 features teas */
+div#tea-items {
+  display: flex;
+  flex-wrap: wrap;  /* needed to break into two lines */
+  justify-content: center;
+}
+
+/* Individual tea div */
+div.tea {
+  padding: 5px;
+}
+
+.tea img {  /* per spec */
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+.tea span {
+  display: block;
+  padding: 0 5px 5px 5px; /* ensures 10px between image and caption, per spec */
+  font-weight: bold;
+}
+
+/*******************************************
+LOCATIONS SECTION
+*******************************************/
+div#locations {
+  height: 500px;
+  justify-content: center;
+  padding-top: 70px;
+  background-image: url("../img/img-locations-background.jpg");
+}
+
+/* Container for the three location divs */
+div#location-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Location detail div */
+div.location-detail {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  flex-basis: 280px;
+  opacity: 1;
+  margin: 5px 20px; /* per spec, ensures 15px between h2 and divs, and 40px between divs */
+  padding: 10px;
+}
+
+/*******************************************
+CONTACT SECTION
+*******************************************/
+div#contact {
+  height: 200px;
+}
+
+/*******************************************
+FOOTER
+*******************************************/
+footer {
+  text-align: left;
+  padding: 0 20px;
+}
